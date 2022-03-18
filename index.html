@@ -23,38 +23,39 @@
                 Welcome to <a>PathTracer!</a>
             </h1>
 
-            <div class='grid'>
-                <a class='card'>
-                    <h2>Overlook &rarr;</h2>
-                    <p>What's in the project?</p>
-                </a>
+            <button onclick="drawScene()">Start</button>
 
-                <a class='card'>
-                    <h2>Learn &rarr;</h2>
-                    <p>Learn about Next.js!</p>
-                </a>
+            <canvas id="mainCanvas" width="1280" height="720">
 
-                <a class='card'>
-                    <h2>Canvas &rarr;</h2>
-                    <p>Add editable space and some interactive buttons!</p>
-                </a>
-
-                <a class='card'>
-                    <h2>Trace &rarr;</h2>
-                    <p>Finally, add pathtracing algorithms!</p>
-                </a>
-            </div>
         </main>
 
         <footer class='footer'>
-            <a>
-                Powered by
+            <a> Powered by
                 <span class='logo'>
                     <img src="public/Logo.png" alt="K.Banski Logo" width=72 height=24 />
                 </span>
             </a>
         </footer>
     </div>
+
+    <script src="js/util.js"></script>
+    <script src="js/vector.js"></script>
+
+    <script src="js/ray.js"></script>
+    <script src="js/hitRecord.js"></script>
+    <script src="js/scatterRecord.js"></script>
+
+    <script src="js/pdf.js"></script>
+    <script src="js/material.js"></script>
+
+    <script src="js/camera.js"></script>
+
+    <script src="js/sphere.js"></script>
+
+    <script src="js/scene.js"></script>
+
+    <script src="js/renderer.js"></script>
+    <script src="js/ptWeb.js"></script>
 
 </body>
 
