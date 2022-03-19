@@ -141,7 +141,14 @@ Vector.randomUnitVector = function () {
 Vector.randomInUnitDisk = function () {
     while (true) {
         const vec = new Vector(randomDouble(-1, 1), randomDouble(-1, 1), 0);
-        if (vec.cross(vec) >= 1) continue;
+        if (vec.lengthSquared() >= 1) continue;
+        return vec;
+    }
+}
+Vector.randomInUnitSphere = function () {
+    while (true) {
+        const vec = new Vector(randomDouble(-1, 1), randomDouble(-1, 1), randomDouble(-1, 1));
+        if (vec.lengthSquared() >= 1) continue;
         return vec;
     }
 }
